@@ -46,25 +46,20 @@ body{
     align-items: center;
 }
 
-.info-box{
-    width: 100vw;
-}
-
 .info{
-    max-width: 38rem;
+    width: 38rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .info .norm{
-    
     font-family: var(--font-light);
     font-weight: 100;
     margin-bottom: -0.5rem;
-
 }
 .info .bold{
     font-weight: 100px;
@@ -88,12 +83,12 @@ body{
 .supervisor, .calculator{
     display: flex;
     align-items: center;
-    width: 20rem;
+    width: 23rem;
 }
 
 .card{
     background-color: #ffffff;
-    width: 20rem;
+    width: 23rem;
     border-radius: 0.5rem;
     padding: 2rem;
     display: flow-root;
@@ -111,7 +106,7 @@ body{
     float: right;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1250px){
     .card-grid{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -121,7 +116,12 @@ body{
     }
 }
 
-@media (max-width: 765px){
+@media (max-width: 780px){
+    .info{
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 0 0 2rem 0;
+    }
     .card-grid{
         grid-template-columns: 1fr;
         grid-template-rows: 4fr;
